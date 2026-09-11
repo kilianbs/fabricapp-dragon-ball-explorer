@@ -6,6 +6,18 @@ La interfaz está en español y todo el catálogo se consume directamente desde 
 
 ---
 
+## Capturas
+
+### Catálogo de personajes
+
+![Catálogo de personajes](public/screenshots/characters-catalog.png)
+
+### Detalle de personaje y transformaciones
+
+![Detalle de Goku y sus transformaciones](public/screenshots/character-detail.png)
+
+---
+
 ## ¿Qué es una Fabric App?
 
 Una **Fabric App** es una aplicación que se despliega y opera dentro de **Microsoft Fabric**. No es un servidor tradicional: Fabric se encarga del hosting estático, de la autenticación contra Entra ID (Azure AD) y, opcionalmente, de una capa de datos y funciones serverless.
@@ -227,4 +239,4 @@ npm run test
 
 ## Dependencia externa
 
-El catálogo y las vistas de detalle llaman a `https://dragonball-api.com/api` directamente desde el navegador. Es una API pública sin clave, sin rate-limit documentado y sin garantía de uptime. Si no responde, cada vista muestra un control de reintento en lugar de fallar silenciosamente. Ver `openspec/changes/dragonball-explorer/design.md` para el razonamiento y los trade-offs de esta decisión.
+El catálogo y las vistas de detalle llaman a `https://dragonball-api.com/api` directamente desde el navegador. Es una API pública sin clave, sin rate-limit documentado y sin garantía de uptime. Si no responde, cada vista muestra un control de reintento en lugar de fallar silenciosamente.
