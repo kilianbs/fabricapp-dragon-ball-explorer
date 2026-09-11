@@ -199,10 +199,10 @@ Las variables relevantes son:
 ### 6. Desplegar en Fabric
 
 ```bash
-npm run rayfin up
+npm run rayfin:up
 ```
 
-Ejecuta `rayfin up`, que:
+Ejecuta `rayfin:up`, que:
 
 1. Compila el bundle de producción (`npm run build:fabric` → `tsc -b && vite build`).
 2. Sube el contenido de `dist/` al static hosting de Fabric.
@@ -223,7 +223,7 @@ La URL resultante tendrá el formato `https://<nombre>-westeurope.webapp.fabrica
 | `npm run lint` | Lint con ESLint |
 | `npm run test` | Tests unitarios con Vitest |
 | `npm run preview` | Preview del build local con `vite preview` |
-| `npm run rayfin up` | Despliega la app a Fabric (sin dev server local) |
+| `npm run rayfin:up` | Despliega la app a Fabric (sin dev server local) |
 
 ---
 
