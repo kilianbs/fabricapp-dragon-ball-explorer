@@ -1,0 +1,58 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies
+node_modules
+
+# Build output
+dist
+dist-ssr
+*.tsbuildinfo
+.vite
+
+# Test coverage
+coverage
+
+# Local env files (`*.local` matches `.env.local`, `.env.*.local`, etc.)
+*.local
+
+# Rayfin — auto-generated or secret-bearing files
+# `rayfin/.env*` covers .env, .env.bak (emitted by env-file v2 migration with
+# secrets), and any future .env-family files Rayfin's runtime adds.
+rayfin/.env*
+rayfin/.deployments.json
+rayfin/.lockfile.json
+rayfin/.*.tmp
+rayfin/.temp/
+# Transient runtime config emitted during deploy — never commit.
+rayfin.config.json
+
+# Agent / CLI working state
+.claude/
+.agents/skills/.openspec-target
+.agents/skills/openspec-apply-change/
+.agents/skills/openspec-archive-change/
+.agents/skills/openspec-explore/
+.agents/skills/openspec-propose/
+.agents/skills/openspec-sync-specs/
+.agents/skills/openspec-update-change/
+.github/
+
+# OpenSpec — planning artifacts and specs, not needed in the repo
+openspec/
+
+# Editor / OS
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.vscode/

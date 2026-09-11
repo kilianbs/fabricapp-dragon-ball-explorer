@@ -1,0 +1,28 @@
+id: dragon-ball-explorer
+name: dragon-ball-explorer
+version: 1.0.0
+services:
+  auth:
+    enabled: true
+    fabric:
+      enabled: true
+    password:
+      enabled: true
+    allowedRedirectUris:
+      - http://localhost:5173
+      - http://127.0.0.1:5173
+      - https://close-gulf-99d4d26d85-westeurope.webapp.fabricapps.net
+      - http://localhost:5174
+      - http://127.0.0.1:5174
+      - https://legal-bluff-a6c3fb62d5-westeurope.webapp.fabricapps.net
+  data:
+    enabled: false
+  staticHosting:
+    enabled: true
+    folder: dist
+    buildCommand: npm run build:fabric
+    indexDocument: index.html
+  storage:
+    enabled: false
+  functions:
+    enabled: false
